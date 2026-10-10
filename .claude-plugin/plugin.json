@@ -1,0 +1,31 @@
+{
+  "name": "wxmedia",
+  "description": "WeChat (微信) channel for Claude Code with image, video and file attachments — messaging bridge via iLink Bot API with built-in access control.",
+  "version": "0.2.1",
+  "author": {
+    "name": "richardu8"
+  },
+  "homepage": "https://github.com/richardu8/claude-plugin-wxmedia",
+  "repository": "https://github.com/richardu8/claude-plugin-wxmedia",
+  "license": "MIT",
+  "keywords": [
+    "weixin",
+    "wechat",
+    "messaging",
+    "channel",
+    "mcp"
+  ],
+  "mcpServers": {
+    "wxmedia": {
+      "command": "bun",
+      "args": [
+        "run",
+        "--cwd",
+        "${CLAUDE_PLUGIN_ROOT}",
+        "--shell=bun",
+        "--silent",
+        "start"
+      ]
+    }
+  }
+}
